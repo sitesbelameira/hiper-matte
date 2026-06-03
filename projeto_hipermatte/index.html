@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Hiper Mate | Seu Chimarrão Portátil, Em Qualquer Lugar</title>
+  <meta name="description" content="A HIPER MATE inova a tradição gaúcha com o primeiro kit portátil de chimarrão. Desfrute de um mate quentinho, prático e sem sujeira onde você estiver.">
+  <meta name="keywords" content="chimarrao, kit portatil, erva-mate, tradição gaúcha, hiper mate, mate pratico, mobilidade, rio grande do sul">
+  <meta name="author" content="HIPER MATE Startup">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Hiper Mate | Seu Chimarrão Portátil, Em Qualquer Lugar">
+  <meta property="og:description" content="Leve a tradição do Rio Grande do Sul com você. Kit portátil de chimarrão com cuia térmica, bomba e aquecedor de água descartável.">
+  <meta property="og:image" content="assets/img/hero.png">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🌿</text></svg>">
+
+  <!-- Estilos CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       CABECALHO / NAVBAR
+       ========================================================================== -->
+  <header>
+    <div class="navbar">
+      <a href="#home" class="logo" id="nav-logo-link">
+        <!-- Ícone minimalista de folha/cuia -->
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2C6.48 2 2 6.48 2 12c0 3.84 2.16 7.18 5.34 8.9L12 22l4.66-1.1C19.84 19.18 22 15.84 22 12c0-5.52-4.48-10-10-10zm-1 15.5H9v-2h2v2zm0-4H9V7h2v6.5zm5 4h-2v-6h2v6zm0-8h-2V7h2v2.5z" opacity="0.1"/>
+          <path d="M2 12c0 4.41 3.59 8 8 8v2c-5.52 0-10-4.48-10-10S4.48 2 10 2v2c-4.41 0-8 3.59-8 8z" fill="#4A7C59"/>
+          <path d="M12 22c5.52 0 10-4.48 10-10S17.52 2 12 2v2c4.41 0 8 3.59 8 8s-3.59 8-8 8v2z" fill="#1F5E3B"/>
+          <path d="M12 6c-3.31 0-6 2.69-6 6h12c0-3.31-2.69-6-6-6z" fill="#4A7C59"/>
+        </svg>
+        <span>HIPER MATE</span>
+      </a>
+
+      <!-- Menu de Navegação -->
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home" class="active" id="link-home">Home</a></li>
+          <li><a href="#como-funciona" id="link-como-funciona">Como Funciona</a></li>
+          <li><a href="#diferenciais" id="link-diferenciais">Diferenciais</a></li>
+          <li><a href="#produtos" id="link-produtos">Kits & Produtos</a></li>
+          <li><a href="#sobre-nos" id="link-sobre-nos">Sobre Nós</a></li>
+          <li><a href="#contato" id="link-contato">Contato</a></li>
+          <li>
+            <a href="#carrinho" class="nav-cart-btn spa-btn" id="btn-nav-cart" aria-label="Ver carrinho">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
+              <span class="cart-badge" id="cart-badge">0</span>
+            </a>
+          </li>
+          <li><a href="#produtos" class="nav-cta spa-btn" id="btn-comprar-nav">Quero Meu Kit</a></li>
+        </ul>
+      </nav>
+
+      <!-- Botão Menu Mobile -->
+      <button class="mobile-menu-btn" aria-label="Abrir menu" id="btn-mobile-menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       CONTEÚDO PRINCIPAL (SPA)
+       ========================================================================== -->
+  <main>
+
+    <!-- 🏠 SEÇÃO 1: HOME -->
+    <section class="page-section active" id="home">
+      <div class="container">
+        
+        <!-- Hero Section -->
+        <div class="hero-wrapper">
+          <div class="hero-content">
+            <h1 class="hero-title">Seu Chimarrão. <br><span>Em Qualquer Lugar.</span></h1>
+            <p class="hero-subtitle">O primeiro kit portátil que reúne tudo o que você precisa para aproveitar o mate sem complicações, onde você estiver.</p>
+            <div class="hero-buttons">
+              <a href="#produtos" class="btn btn-primary spa-btn" id="btn-hero-comprar">👉 Comprar Agora</a>
+              <a href="#como-funciona" class="btn btn-secondary spa-btn" id="btn-hero-conhecer">Conhecer o Produto</a>
+            </div>
+          </div>
+          <div class="hero-image-container">
+            <img src="assets/img/ronaldinho.png" alt="Ronaldinho Gaúcho estrelando a campanha HIPER MATE, segurando a cuia e o kit portátil" class="hero-img">
+            <div class="hero-badge">
+              <div class="hero-badge-icon">⚽</div>
+              <div class="hero-badge-text">
+                <h4>Aprovado pelo Bruxo 🧙‍♂️</h4>
+                <p>O mate do Ronaldinho</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Seção 2: Como Funciona (Resumido) -->
+        <div class="how-it-works-brief reveal">
+          <div class="section-header">
+            <span class="section-tag">Simplicidade</span>
+            <h2 class="section-title">Como Funciona</h2>
+            <p class="section-desc">Prepare seu chimarrão em segundos com nosso sistema inovador e intuitivo.</p>
+          </div>
+          
+          <div class="steps-grid">
+            <div class="step-card">
+              <div class="step-num">1</div>
+              <h3 class="step-title">Abra o kit</h3>
+              <p class="step-desc">Kit compacto que cabe na mochila ou bolsa.</p>
+            </div>
+            <div class="step-card">
+              <div class="step-num">2</div>
+              <h3 class="step-title">Prepare a cuia</h3>
+              <p class="step-desc">Adicione a erva-mate pré-dosada premium.</p>
+            </div>
+            <div class="step-card">
+              <div class="step-num">3</div>
+              <h3 class="step-title">Aqueça a água</h3>
+              <p class="step-desc">Ative o sistema de aquecimento instantâneo.</p>
+            </div>
+            <div class="step-card">
+              <div class="step-num">4</div>
+              <h3 class="step-title">Aproveite!</h3>
+              <p class="step-desc">Seu mate pronto onde quer que você esteja.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Seção 3: Benefícios -->
+        <div class="reveal" style="margin: 80px 0;">
+          <div class="section-header">
+            <span class="section-tag">Vantagens</span>
+            <h2 class="section-title">Feito para sua Rotina</h2>
+            <p class="section-desc">Unimos a essência gaúcha com a agilidade do mundo moderno.</p>
+          </div>
+
+          <div class="benefits-grid">
+            <div class="benefit-card">
+              <div class="benefit-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-package-open"><path d="M12 22v-9"/><path d="M15.17 2.17a3 3 0 0 0-4.34 0L2 11h10l3.17-8.83z"/><path d="M22 11 13.17 2.17a3 3 0 0 0-4.34 0L7 4"/><path d="M2 11h20v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V11z"/></svg>
+              </div>
+              <h3 class="benefit-title">Leve e Compacto</h3>
+              <p class="benefit-desc">Todo o seu chimarrão estruturado em um design minimalista que não ocupa espaço.</p>
+            </div>
+            <div class="benefit-card">
+              <div class="benefit-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/></svg>
+              </div>
+              <h3 class="benefit-title">Sem Sujeira</h3>
+              <p class="benefit-desc">Erva-mate em sachês inteligentes que evitam desperdício e facilitam o descarte.</p>
+            </div>
+            <div class="benefit-card">
+              <div class="benefit-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+              </div>
+              <h3 class="benefit-title">Pronto para Uso</h3>
+              <p class="benefit-desc">Não precisa de garrafa térmica externa ou preparação complexa da erva.</p>
+            </div>
+            <div class="benefit-card">
+              <div class="benefit-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plane-takeoff"><path d="M2 22h20"/><path d="M6 12H4a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h2"/><path d="M21 16V9a2 2 0 0 0-2-2h-3L9 13H4v3h17Z"/><path d="M16.5 7.5 13 4h-3l3 5.5"/></svg>
+              </div>
+              <h3 class="benefit-title">Ideal para Viagens</h3>
+              <p class="benefit-desc">Leve na bagagem de mão, no avião, ônibus ou carro sem se preocupar com vazamentos.</p>
+            </div>
+            <div class="benefit-card">
+              <div class="benefit-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-backpack"><path d="M4 10a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V10Z"/><path d="M9 6V4a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/><path d="M8 21v-5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v5"/><path d="M8 10h8"/></svg>
+              </div>
+              <h3 class="benefit-title">Fácil Transporte</h3>
+              <p class="benefit-desc">Alça ergonômica e estojo de proteção premium para carregar com conforto.</p>
+            </div>
+            <div class="benefit-card">
+              <div class="benefit-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart-handshake"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/><path d="M12 5 9.04 7.96a2.17 2.17 0 0 0 0 3.08v0c.82.82 2.13.85 3 .07l2.07-1.9a2.82 2.82 0 0 1 3.79 0l1.9 1.9c.82.83.82 2.17 0 3L12 21"/></svg>
+              </div>
+              <h3 class="benefit-title">Experiência Completa</h3>
+              <p class="benefit-desc">O verdadeiro sabor e calor do chimarrão tradicional com tecnologia de ponta.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Seção 4: Para Quem É -->
+        <div class="audience-section reveal">
+          <div class="container">
+            <div class="section-header">
+              <span class="section-tag">Público</span>
+              <h2 class="section-title">Para Quem Criamos o HIPER MATE?</h2>
+              <p class="section-desc">Seja no estudo, trabalho ou lazer, o seu mate te acompanha.</p>
+            </div>
+            
+            <div class="audience-grid">
+              <div class="audience-card">
+                <div class="audience-icon">🎓</div>
+                <h4 class="audience-title">Universitários</h4>
+              </div>
+              <div class="audience-card">
+                <div class="audience-icon">💼</div>
+                <h4 class="audience-title">Profissionais Urbanos</h4>
+              </div>
+              <div class="audience-card">
+                <div class="audience-icon">✈️</div>
+                <h4 class="audience-title">Viajantes</h4>
+              </div>
+              <div class="audience-card">
+                <div class="audience-icon">🧉</div>
+                <h4 class="audience-title">Amantes do Mate</h4>
+              </div>
+              <div class="audience-card">
+                <div class="audience-icon">⛰️</div>
+                <h4 class="audience-title">Turistas</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Seção 5: Diferenciais (Comparativo) -->
+        <div class="reveal" style="margin: 80px 0;">
+          <div class="section-header">
+            <span class="section-tag">Comparativo</span>
+            <h2 class="section-title">Kit Tradicional VS HIPER MATE</h2>
+            <p class="section-desc">Entenda por que a nossa solução portátil revoluciona a forma de tomar chimarrão.</p>
+          </div>
+
+          <div class="comparison-container">
+            <table class="comparison-table">
+              <thead>
+                <tr>
+                  <th>Funcionalidade</th>
+                  <th>Kit Tradicional</th>
+                  <th class="highlight">HIPER MATE</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Espaço Ocupado</td>
+                  <td>Grande (Garrafa, Cuia, Porta-erva)</td>
+                  <td class="feature-check">Mínimo (Tudo em uma embalagem compacta)</td>
+                </tr>
+                <tr>
+                  <td>Facilidade de Transporte</td>
+                  <td>Exige bolsa térmica ou mochila grande</td>
+                  <td class="feature-check">Super Leve (Cabe em qualquer compartimento)</td>
+                </tr>
+                <tr>
+                  <td>Sujeira e Preparação</td>
+                  <td>Fácil de derramar erva e água na hora de montar</td>
+                  <td class="feature-check">Sem sujeira (Sachês inteligentes e limpos)</td>
+                </tr>
+                <tr>
+                  <td>Aquecimento da Água</td>
+                  <td>Exige ter água quente pronta na garrafa</td>
+                  <td class="feature-check">Sistema de aquecimento instantâneo integrado</td>
+                </tr>
+                <tr>
+                  <td>Tempo de Preparo</td>
+                  <td>De 5 a 10 minutos</td>
+                  <td class="feature-check">Menos de 1 minuto</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Seção 6: Depoimentos -->
+        <div class="testimonials-section reveal">
+          <div class="container">
+            <div class="section-header">
+              <span class="section-tag">Opinião</span>
+              <h2 class="section-title">Quem Usa, Recomenda</h2>
+              <p class="section-desc">Veja o feedback de quem já substituiu o kit pesado pela praticidade do HIPER MATE.</p>
+            </div>
+
+            <div class="carousel-container">
+              <div class="carousel-track">
+                <div class="testimonial-card">
+                  <p class="testimonial-quote">Perfeito para levar para a faculdade. Consigo tomar meu mate durante as aulas sem carregar aquela garrafa térmica enorme.</p>
+                  <h4 class="testimonial-author">Juliana Silveira</h4>
+                  <p class="testimonial-role">Estudante de Engenharia - Porto Alegre/RS</p>
+                </div>
+                <div class="testimonial-card">
+                  <p class="testimonial-quote">Uso sempre nas viagens. O sistema de aquecimento é genial e prático. O chimarrão gaúcho agora roda o mundo comigo.</p>
+                  <h4 class="testimonial-author">Mateus Sartori</h4>
+                  <p class="testimonial-role">Fotógrafo e Viajante - Caxias do Sul/RS</p>
+                </div>
+                <div class="testimonial-card">
+                  <p class="testimonial-quote">Finalmente um kit compacto de verdade. O sabor da erva-mate é excelente e a cuia térmica mantém a temperatura ideal.</p>
+                  <h4 class="testimonial-author">Ricardo Fontoura</h4>
+                  <p class="testimonial-role">Arquiteto e Urbanista - Passo Fundo/RS</p>
+                </div>
+                <div class="testimonial-card">
+                  <p class="testimonial-quote">Prático, bonito e muito funcional. Excelente para o dia a dia no coworking. Meus colegas sempre perguntam onde comprei.</p>
+                  <h4 class="testimonial-author">Camila Medeiros</h4>
+                  <p class="testimonial-role">Desenvolvedora Web - Pelotas/RS</p>
+                </div>
+              </div>
+              <div class="carousel-dots"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Seção 7: CTA Final -->
+        <div class="cta-banner reveal">
+          <h2>Leve sua tradição com você.</h2>
+          <p>Tenha a experiência completa do chimarrão onde estiver, com estilo e inovação.</p>
+          <a href="#produtos" class="btn spa-btn" id="btn-cta-final">👉 Quero Meu HIPER MATE</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 📄 SEÇÃO 2: COMO FUNCIONA (DETALHADO) -->
+    <section class="page-section" id="como-funciona">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Tecnologia</span>
+          <h2 class="section-title">Simples e Inteligente</h2>
+          <p class="section-desc">Entenda cada detalhe de como o HIPER MATE foi desenhado para facilitar a sua vida.</p>
+        </div>
+
+        <div class="how-detailed-grid">
+          <div>
+            <h3>O que vem no seu kit portátil?</h3>
+            <p>Criamos um ecossistema completo onde cada item se encaixa perfeitamente, reduzindo o volume físico em 70% comparado aos utensílios tradicionais.</p>
+            
+            <div class="component-list">
+              <div class="component-item">
+                <div class="component-item-icon">1</div>
+                <div class="component-item-text">
+                  <h4>Cuia Térmica 250ml com aquecedor imbutido</h4>
+                  <p>Feita com parede dupla de aço inoxidável a vácuo. Mantém o mate quente por até 3 horas e não esquenta a mão externa.</p>
+                </div>
+              </div>
+              <div class="component-item">
+                <div class="component-item-icon">2</div>
+                <div class="component-item-text">
+                  <h4>Bomba de Aço Inox</h4>
+                  <p>Design moderno com sistema de rosca para limpeza interna. Filtro de alta eficiência que evita o entupimento.</p>
+                </div>
+              </div>
+              <div class="component-item">
+                <div class="component-item-icon">3</div>
+                <div class="component-item-text">
+                  <h4>Sachê de Erva-Mate Premium</h4>
+                  <p>Erva-mate selecionada de moagem média (foco em sabor e constância). Embalagem hermética zip-lock contendo entre 40g e 70g (perfeito para 3 a 5 preparos).</p>
+                </div>
+              </div>
+              <div class="component-item">
+                <div class="component-item-icon">4</div>
+                <div class="component-item-text">
+                  <h4>Sistema Descartável de Aquecimento</h4>
+                  <p>Cartucho tecnológico ecológico. Aquece a quantidade exata de água a 75°C de forma instantânea através de uma reação térmica segura e sem chamas.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <img src="assets/img/components.png" alt="Componentes do kit portátil Hiper Mate" class="hero-img" style="border: 1px solid var(--border-color)">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 📄 SEÇÃO 3: DIFERENCIAIS (DETALHADO) -->
+    <section class="page-section" id="diferenciais">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Inovação</span>
+          <h2 class="section-title">Por que escolher o HIPER MATE?</h2>
+          <p class="section-desc">Criamos mais que um produto, criamos um novo estilo de consumo que respeita as raízes.</p>
+        </div>
+
+        <div class="features-detailed-grid">
+          <div class="feature-detailed-card">
+            <div class="feature-detailed-img-container">📦</div>
+            <h3>Tudo em um Único Kit</h3>
+            <p>Chega de carregar garrafa térmica em um braço, cuia no outro e porta-erva na mochila. Nosso kit se integra como um único cilindro moderno e fácil de organizar.</p>
+          </div>
+          <div class="feature-detailed-card">
+            <div class="feature-detailed-img-container">📏</div>
+            <h3>Design Compacto</h3>
+            <p>Pensado para a vida urbana. O tamanho foi otimizado para caber no porta-copos do carro, na lateral da mochila escolar ou na bolsa de mão.</p>
+          </div>
+          <div class="feature-detailed-card">
+            <div class="feature-detailed-img-container">✈️</div>
+            <h3>Mobilidade Total</h3>
+            <p>Perfeito para quem está sempre em movimento. De Gramado à Europa, você tem um chimarrão quente sem depender de tomadas ou pontos de água quente.</p>
+          </div>
+          <div class="feature-detailed-card">
+            <div class="feature-detailed-img-container">🧼</div>
+            <h3>Praticidade e Limpeza</h3>
+            <p>Nossos sachês dosadores garantem que a erva entre em contato apenas com a água dentro da cuia, sem derramar no ambiente externo. Rápido de limpar e descartar.</p>
+          </div>
+          <div class="feature-detailed-card">
+            <div class="feature-detailed-img-container">🏆</div>
+            <h3>Experiência Premium</h3>
+            <p>Materiais de alta durabilidade e toque suave (soft-touch). Um produto elegante que combina com escritórios corporativos e reuniões modernas.</p>
+          </div>
+          <div class="feature-detailed-card">
+            <div class="feature-detailed-img-container">🌱</div>
+            <h3>Conexão com a Tradição</h3>
+            <p>Respeitamos a cultura gaúcha. A erva-mate é 100% natural, sem aditivos químicos, colhida de forma sustentável para entregar o amargor perfeito.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 📄 SEÇÃO 4: PRODUTOS -->
+    <section class="page-section" id="produtos">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Loja</span>
+          <h2 class="section-title">Escolha o seu HIPER MATE</h2>
+          <p class="section-desc">Kits montados para atender desde o mateador casual até quem não vive sem o chimarrão diário.</p>
+        </div>
+
+        <div class="products-grid">
+          <!-- Produto 1 -->
+          <div class="product-card">
+            <div class="product-img-wrapper">
+              <img src="assets/img/lifestyle.png" alt="Kit Essencial Hiper Mate">
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Kit Essencial</h3>
+              <div class="product-price">R$ 199,90 <span>/ kit</span></div>
+              <ul class="product-features">
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle-2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                  1 Cuia Térmica Inox 250ml
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle-2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                  1 Bomba Inox com Rosca
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle-2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                  2 Sachês de Erva-Mate (50g)
+                </li>
+                <li style="opacity: 0.5; text-decoration: line-through;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x-circle"><circle cx="12" cy="12" r="10"/><path d="m15 9-6 6"/><path d="m9 9 6 6"/></svg>
+                  Aquecimento instantâneo
+                </li>
+              </ul>
+              <button class="btn btn-primary product-btn btn-add-to-cart" data-id="kit-essencial" data-name="Kit Essencial" data-price="199.90" data-img="assets/img/lifestyle.png" id="btn-comprar-essencial">Adicionar ao Carrinho</button>
+            </div>
+          </div>
+
+          <!-- Produto 2 (Destacado) -->
+          <div class="product-card premium-tag">
+            <span class="product-tag">Mais Vendido</span>
+            <div class="product-img-wrapper">
+              <img src="assets/img/hero.png" alt="Kit Completo Hiper Mate">
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Kit Completo</h3>
+              <div class="product-price">R$ 380,90 <span>/ kit</span></div>
+              <ul class="product-features">
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle-2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                  1 Cuia Térmica Inox 250ml
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle-2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                  1 Bomba Inox com Rosca
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle-2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                  5 Sachês de Erva-Mate Premium
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle-2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                  5 Cartuchos de Aquecimento
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle-2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                  Embalagem cilindro protetora
+                </li>
+              </ul>
+              <button class="btn btn-primary product-btn btn-add-to-cart" data-id="kit-completo" data-name="Kit Completo" data-price="380.90" data-img="assets/img/hero.png" id="btn-comprar-completo" style="background-color: var(--secondary); border-color: var(--secondary);">Adicionar ao Carrinho</button>
+            </div>
+          </div>
+
+          <!-- Produto 3 -->
+          <div class="product-card">
+            <div class="product-img-wrapper">
+              <img src="assets/img/components.png" alt="Kit Presente Hiper Mate">
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Kit Presente</h3>
+              <div class="product-price">R$ 520,00 <span>/ kit</span></div>
+              <ul class="product-features">
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle-2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                  1 Cuia Personalizada (Gravação a laser)
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle-2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                  1 Bomba Inox Premium
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle-2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                  8 Sachês de Erva-Mate Selecionada
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle-2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                  8 Cartuchos de Aquecimento
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle-2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                  Estojo de Couro Ecológico Personalizado
+                </li>
+              </ul>
+              <button class="btn btn-primary product-btn btn-add-to-cart" data-id="kit-presente" data-name="Kit Presente" data-price="520.00" data-img="assets/img/components.png" id="btn-comprar-presente">Adicionar ao Carrinho</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 📄 SEÇÃO 5: SOBRE NÓS, TRADIÇÃO GAÚCHA & HISTÓRIA -->
+    <section class="page-section" id="sobre-nos">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Identidade</span>
+          <h2 class="section-title">Sobre Nós</h2>
+          <p class="section-desc">Entenda nosso propósito de conectar tradição e tecnologia.</p>
+        </div>
+
+        <div class="about-split">
+          <div class="about-text">
+            <h3>Quem Somos</h3>
+            <p>Nascemos no coração do Rio Grande do Sul com um desafio claro: como permitir que o gaúcho moderno, inserido na correria de grandes cidades ou em trânsito constante pelo mundo, continue saboreando seu chimarrão de forma digna, gostosa e prática?</p>
+            <p>A resposta foi o desenvolvimento do HIPER MATE. Unimos engenharia térmica a uma curadoria rigorosa da melhor erva-mate para criar uma solução de mobilidade que cabe na sua rotina, respeitando cada detalhe da tradição.</p>
+            
+            <div class="mvv-container">
+              <div class="mvv-card">
+                <h4>Missão</h4>
+                <p>Levar a tradição do chimarrão para qualquer lugar do planeta com praticidade e inovação tecnológica.</p>
+              </div>
+              <div class="mvv-card">
+                <h4>Visão</h4>
+                <p>Ser a startup referência nacional em soluções inteligentes e portáteis para o consumo da erva-mate.</p>
+              </div>
+              <div class="mvv-card">
+                <h4>Valores</h4>
+                <p>Inovação constante, respeito à tradição gaúcha, sustentabilidade e excelência em design.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="about-text" style="background-color: #FAF8F5; padding: 40px; border-radius: var(--radius-md); border: 1px solid var(--border-color);">
+            <h3 style="color: var(--secondary); display: flex; align-items: center; gap: 10px;">
+              <span>🌿</span> A Tradição Gaúcha
+            </h3>
+            <p>O chimarrão é mais que uma bebida; é um símbolo de união, amizade e acolhimento. Com o HIPER MATE, a cuia térmica e os sachês herméticos mantêm viva a essência do mate gaúcho de forma sustentável e adaptada aos novos tempos.</p>
+            <p>Nossos sachês utilizam erva-mate de produtores locais gaúchos, mantendo a moagem tradicional que garante a formação da espuma e aquele amargor característico que todo apreciador busca.</p>
+          </div>
+        </div>
+
+        <!-- Bloco Especial: História da Erva-Mate & Conexão Rio Grande do Sul -->
+        <div class="history-block reveal">
+          <div class="history-text">
+            <span class="section-tag" style="color: var(--rs-red);">Nossa Origem</span>
+            <h3 style="font-family: var(--font-title); font-size: 2.2rem; color: var(--primary); margin-bottom: 20px;">A Lenda e a História do Mate</h3>
+            <p style="color: var(--text-dark); font-size: 1rem; margin-bottom: 16px;">
+              A história da erva-mate (<i>Ilex paraguariensis</i>) começa muito antes de se tornar o símbolo gaúcho. Ela tem raízes profundas na cultura indígena Guarani. Segundo as lendas nativas, a erva foi um presente do mensageiro de Tupã a um velho cacique cansado, concedendo-lhe vigor e uma bebida que unia as tribos.
+            </p>
+            <p style="color: var(--text-dark); font-size: 1rem; margin-bottom: 16px;">
+              Ao longo dos séculos, os colonizadores e os jesuítas adotaram o hábito, espalhando-o pelo pampa. Mas foi a figura do **Gaúcho** — o habitante das planícies do sul — que transformou o mate em uma verdadeira filosofia de vida diária.
+            </p>
+            <p style="color: var(--text-dark); font-size: 1rem; font-weight: 500;">
+              Hoje, no Rio Grande do Sul, o chimarrão é um ritual diário. Representa a hospitalidade, a pausa para reflexão e a partilha entre amigos. O <strong>HIPER MATE</strong> nasceu para honrar essa história secular, garantindo que o costume gaúcho não se perca com a pressa do dia a dia, mas sim que ganhe o mundo.
+            </p>
+          </div>
+          <div class="history-flag-container">
+            <!-- Bandeira Oficial do Rio Grande do Sul -->
+            <img src="assets/img/bandeira_rs.svg" alt="Bandeira Oficial do Rio Grande do Sul" class="rs-flag-svg">
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 📄 SEÇÃO 6: MEU CARRINHO / VENDAS -->
+    <section class="page-section" id="carrinho">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Checkout</span>
+          <h2 class="section-title">Meu Carrinho</h2>
+          <p class="section-desc">Revise seus itens e finalize o pedido de forma prática e rápida.</p>
+        </div>
+
+        <div class="cart-wrapper">
+          <!-- Lista de Produtos (Esquerda) -->
+          <div class="cart-items-container">
+            <div id="cart-empty" class="cart-empty-message">
+              <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-bag"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+              <h3>Seu carrinho está vazio</h3>
+              <p>Que tal escolher um kit de chimarrão portátil para começar?</p>
+              <a href="#produtos" class="btn btn-primary spa-btn" id="btn-carrinho-escolher">Ver Nossos Kits</a>
+            </div>
+            
+            <div id="cart-content" style="display: none;">
+              <div class="cart-list" id="cart-list-items">
+                <!-- Itens injetados dinamicamente via JS -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Resumo de Compra & Checkout (Direita) -->
+          <div class="cart-checkout-container" id="cart-checkout-section" style="display: none;">
+            <!-- Resumo Financeiro -->
+            <div class="cart-summary-box">
+              <h3>Resumo do Pedido</h3>
+              <div class="summary-row">
+                <span>Subtotal</span>
+                <span id="cart-subtotal">R$ 0,00</span>
+              </div>
+              <div class="summary-row">
+                <span>Frete (Rio Grande do Sul)</span>
+                <span id="cart-shipping" style="color: #2E7D32; font-weight: 600;">Grátis</span>
+              </div>
+              <div class="summary-row total">
+                <span>Total</span>
+                <span id="cart-total">R$ 0,00</span>
+              </div>
+            </div>
+
+            <!-- Formulário de Entrega e Meio de Pagamento -->
+            <div class="checkout-form-box">
+              <h3>Dados de Entrega & Pagamento</h3>
+              <form id="checkout-form">
+                <div class="form-group">
+                  <label for="checkout-name" class="form-label">Nome Completo *</label>
+                  <input type="text" id="checkout-name" class="form-control" placeholder="Seu nome completo" required>
+                </div>
+                <div class="form-group">
+                  <label for="checkout-phone" class="form-label">WhatsApp de Contato *</label>
+                  <input type="tel" id="checkout-phone" class="form-control" placeholder="(51) 99999-9999" required>
+                </div>
+                <div class="form-group">
+                  <label for="checkout-cep" class="form-label">CEP *</label>
+                  <input type="text" id="checkout-cep" class="form-control" placeholder="90000-000" required>
+                </div>
+                <div class="form-group">
+                  <label for="checkout-address" class="form-label">Endereço de Entrega (Rua, Nº, Bairro, Cidade/UF) *</label>
+                  <input type="text" id="checkout-address" class="form-control" placeholder="Av. Ipiranga, 6681 - Partenon, Porto Alegre/RS" required>
+                </div>
+                <div class="form-group">
+                  <label for="checkout-payment" class="form-label">Forma de Pagamento *</label>
+                  <select id="checkout-payment" class="form-control" required>
+                    <option value="" disabled selected>Selecione uma opção</option>
+                    <option value="Pix">Pix (com 5% de desconto)</option>
+                    <option value="Cartão de Crédito">Cartão de Crédito</option>
+                    <option value="Boleto Bancário">Boleto Bancário</option>
+                  </select>
+                </div>
+                
+                <button type="submit" class="checkout-btn" id="btn-finalize-checkout">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-circle"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
+                  Finalizar Pedido via WhatsApp
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 📄 SEÇÃO 7: CONTATO -->
+    <section class="page-section" id="contato">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Atendimento</span>
+          <h2 class="section-title">Fale Conosco</h2>
+          <p class="section-desc">Quer revender na sua cidade, tirar dúvidas ou fazer um pedido especial? Mande uma mensagem!</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Painel Informativo -->
+          <div class="contact-info-panel">
+            <h3>HIPER MATE S.A.</h3>
+            <p>Conectando a tradição dos pampas gaúchos com o futuro da mobilidade urbana.</p>
+            
+            <div class="contact-details">
+              <div class="contact-detail-item">
+                <div class="contact-detail-icon">🧉</div>
+                <div class="contact-detail-text">
+                  <h5>Sede da Startup</h5>
+                  <p>Av. Ipiranga, 6681 - Porto Alegre - RS</p>
+                </div>
+              </div>
+              <div class="contact-detail-item">
+                <div class="contact-detail-icon">📧</div>
+                <div class="contact-detail-text">
+                  <h5>E-mail</h5>
+                  <p>contato@hipermate.com.br</p>
+                </div>
+              </div>
+              <div class="contact-detail-item">
+                <div class="contact-detail-icon">📞</div>
+                <div class="contact-detail-text">
+                  <h5>Telefone / WhatsApp</h5>
+                  <p>(51) 98765-4321</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="social-links">
+              <a href="#" class="social-btn" aria-label="Instagram">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+              </a>
+              <a href="#" class="social-btn" aria-label="Facebook">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+              </a>
+              <a href="#" class="social-btn" aria-label="TikTok">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-music"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Formulário -->
+          <div class="contact-form-wrapper">
+            <form id="contact-form">
+              <div class="form-group">
+                <label for="form-name" class="form-label">Nome Completo *</label>
+                <input type="text" id="form-name" class="form-control" placeholder="Seu nome" required>
+              </div>
+              <div class="form-group">
+                <label for="form-email" class="form-label">E-mail Corporativo ou Pessoal *</label>
+                <input type="email" id="form-email" class="form-control" placeholder="exemplo@email.com" required>
+              </div>
+              <div class="form-group">
+                <label for="form-phone" class="form-label">Telefone / WhatsApp</label>
+                <input type="tel" id="form-phone" class="form-control" placeholder="(51) 99999-9999">
+              </div>
+              <div class="form-group">
+                <label for="form-message" class="form-label">Sua Mensagem *</label>
+                <textarea id="form-message" class="form-control" placeholder="Como podemos te ajudar? Descreva sua dúvida ou proposta..." required></textarea>
+              </div>
+              <button type="submit" class="form-submit-btn" id="btn-submit-form">Enviar Mensagem</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================================
+       BOTAO FLUTUANTE DO WHATSAPP
+       ========================================================================== -->
+  <a href="https://wa.me/5551987654321?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20o%20HIPER%20MATE." class="whatsapp-fixed-btn" target="_blank" rel="noopener noreferrer" aria-label="Fale conosco no WhatsApp" id="whatsapp-float-btn">
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-circle"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
+  </a>
+
+  <!-- ==========================================================================
+       RODAPÉ (FOOTER)
+       ========================================================================== -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2 12c0 4.41 3.59 8 8 8v2c-5.52 0-10-4.48-10-10S4.48 2 10 2v2c-4.41 0-8 3.59-8 8z" fill="#4A7C59"/>
+              <path d="M12 22c5.52 0 10-4.48 10-10S17.52 2 12 2v2c4.41 0 8 3.59 8 8s-3.59 8-8 8v2z" fill="#1F5E3B"/>
+              <path d="M12 6c-3.31 0-6 2.69-6 6h12c0-3.31-2.69-6-6-6z" fill="#4A7C59"/>
+            </svg>
+            <span style="color: var(--white);">HIPER MATE</span>
+          </div>
+          <p>O primeiro ecossistema portátil de chimarrão do Brasil. Criado com orgulho no Rio Grande do Sul.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="#home" class="spa-btn">Home</a></li>
+            <li><a href="#como-funciona" class="spa-btn">Como Funciona</a></li>
+            <li><a href="#diferenciais" class="spa-btn">Diferenciais</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Empresa</h4>
+          <ul>
+            <li><a href="#sobre-nos" class="spa-btn">Sobre Nós</a></li>
+            <li><a href="#produtos" class="spa-btn">Nossos Kits</a></li>
+            <li><a href="#contato" class="spa-btn">Contato</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contato</h4>
+          <p style="font-size: 0.9rem; margin-bottom: 8px;">📧 contato@hipermate.com.br</p>
+          <p style="font-size: 0.9rem; margin-bottom: 8px;">📞 (51) 98765-4321</p>
+          <p style="font-size: 0.85rem;">Porto Alegre - RS | Brasil</p>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 HIPER MATE S.A. Todos os direitos reservados. Feito com 💚 no RS.</p>
+        <p>CNPJ:  86.288.760/0001-08</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lógica da Aplicação -->
+  <script src="app.js"></script>
+</body>
+</html>
