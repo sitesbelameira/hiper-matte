@@ -55,6 +55,12 @@
               <span class="cart-badge" id="cart-badge">0</span>
             </a>
           </li>
+          <li>
+            <a href="#minha-conta" class="nav-user-btn spa-btn" id="btn-nav-user" aria-label="Minha Conta">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              <span class="user-name-label" id="user-name-label">Entrar</span>
+            </a>
+          </li>
           <li><a href="#produtos" class="nav-cta spa-btn" id="btn-comprar-nav">Quero Meu Kit</a></li>
         </ul>
       </nav>
@@ -417,9 +423,16 @@
           <p class="section-desc">Kits montados para atender desde o mateador casual até quem não vive sem o chimarrão diário.</p>
         </div>
 
+        <!-- Filtros de Categorias -->
+        <div class="products-filter-tabs">
+          <button class="filter-tab active" data-filter="all">Todos</button>
+          <button class="filter-tab" data-filter="kits">Kits Portáteis</button>
+          <button class="filter-tab" data-filter="refils">Ervas & Refis</button>
+        </div>
+
         <div class="products-grid">
           <!-- Produto 1 -->
-          <div class="product-card">
+          <div class="product-card" data-category="kits">
             <div class="product-img-wrapper">
               <img src="assets/img/lifestyle.png" alt="Kit Essencial Hiper Mate">
             </div>
@@ -449,7 +462,7 @@
           </div>
 
           <!-- Produto 2 (Destacado) -->
-          <div class="product-card premium-tag">
+          <div class="product-card premium-tag" data-category="kits">
             <span class="product-tag">Mais Vendido</span>
             <div class="product-img-wrapper">
               <img src="assets/img/hero.png" alt="Kit Completo Hiper Mate">
@@ -484,7 +497,7 @@
           </div>
 
           <!-- Produto 3 -->
-          <div class="product-card">
+          <div class="product-card" data-category="kits">
             <div class="product-img-wrapper">
               <img src="assets/img/components.png" alt="Kit Presente Hiper Mate">
             </div>
@@ -514,6 +527,140 @@
                 </li>
               </ul>
               <button class="btn btn-primary product-btn btn-add-to-cart" data-id="kit-presente" data-name="Kit Presente" data-price="520.00" data-img="assets/img/components.png" id="btn-comprar-presente">Adicionar ao Carrinho</button>
+            </div>
+          </div>
+
+          <!-- Produto 4: Refil Tradicional -->
+          <div class="product-card" data-category="refils">
+            <div class="product-img-wrapper">
+              <img src="assets/img/refil_mate.png" alt="Refil Sachês Erva-Mate Tradicional">
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Refil Sachês Erva-Mate Tradicional (10 unid.)</h3>
+              <div class="product-price">R$ 39,90 <span>/ pct</span></div>
+              <ul class="product-features">
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle-2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                  10 Sachês de Erva-Mate Tradicional
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle-2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                  Erva colhida e moída no RS
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle-2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                  Totalmente livre de resíduos e sujeira
+                </li>
+              </ul>
+              <button class="btn btn-primary product-btn btn-add-to-cart" data-id="refil-tradicional" data-name="Refil Sachês Tradicional (10x)" data-price="39.90" data-img="assets/img/refil_mate.png" id="btn-comprar-refil-tradicional">Adicionar ao Carrinho</button>
+            </div>
+          </div>
+
+          <!-- Produto 5: Refil Menta e Hortelã -->
+          <div class="product-card" data-category="refils">
+            <span class="product-tag" style="background-color: #00796B;">Refrescante 🍃</span>
+            <div class="product-img-wrapper">
+              <img src="assets/img/refil_mate.png" alt="Refil Erva-Mate com Menta e Hortelã">
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Refil Erva-Mate com Menta & Hortelã (10 unid.)</h3>
+              <div class="product-price">R$ 44,90 <span>/ pct</span></div>
+              <ul class="product-features">
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle-2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                  10 Sachês com toque de hortelã e menta
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle-2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                  Sabor refrescante e aromático premium
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle-2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                  Perfeito para o dia a dia e dias quentes
+                </li>
+              </ul>
+              <button class="btn btn-primary product-btn btn-add-to-cart" data-id="refil-menta" data-name="Refil Menta & Hortelã (10x)" data-price="44.90" data-img="assets/img/refil_mate.png" id="btn-comprar-refil-menta">Adicionar ao Carrinho</button>
+            </div>
+          </div>
+
+          <!-- Produto 6: Refil Camomila e Cidreira -->
+          <div class="product-card" data-category="refils">
+            <span class="product-tag" style="background-color: var(--rs-yellow); color: var(--text-dark);">Calmante 🌼</span>
+            <div class="product-img-wrapper">
+              <img src="assets/img/refil_mate.png" alt="Refil Erva-Mate com Camomila e Cidreira">
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Refil Erva-Mate com Camomila & Cidreira (10 unid.)</h3>
+              <div class="product-price">R$ 44,90 <span>/ pct</span></div>
+              <ul class="product-features">
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle-2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                  10 Sachês com camomila e capim-cidreira
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle-2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                  Infusão relaxante acoplada ao mate
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle-2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                  Excelente para o fim de tarde / noite
+                </li>
+              </ul>
+              <button class="btn btn-primary product-btn btn-add-to-cart" data-id="refil-camomila" data-name="Refil Camomila & Cidreira (10x)" data-price="44.90" data-img="assets/img/refil_mate.png" id="btn-comprar-refil-camomila">Adicionar ao Carrinho</button>
+            </div>
+          </div>
+
+          <!-- Produto 7: Erva-Mate Premium Argentina -->
+          <div class="product-card" data-category="refils">
+            <span class="product-tag" style="background-color: #1565C0;">Pura Folha 🇦🇷</span>
+            <div class="product-img-wrapper">
+              <img src="assets/img/refil_mate.png" alt="Erva-Mate Premium Argentina Pura Folha">
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Erva-Mate Premium Argentina - Pura Folha (500g)</h3>
+              <div class="product-price">R$ 49,90 <span>/ pct</span></div>
+              <ul class="product-features">
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle-2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                  Pacote de 500g moagem pura folha (sem galho)
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle-2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                  Estilo argentino - sabor encorpado e duradouro
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle-2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                  Erva-mate com maturação natural de 12 meses
+                </li>
+              </ul>
+              <button class="btn btn-primary product-btn btn-add-to-cart" data-id="erva-argentina" data-name="Erva Argentina Premium (500g)" data-price="49.90" data-img="assets/img/refil_mate.png" id="btn-comprar-erva-argentina">Adicionar ao Carrinho</button>
+            </div>
+          </div>
+
+          <!-- Produto 8: Kit Refil Completo -->
+          <div class="product-card" data-category="refils">
+            <span class="product-tag" style="background-color: var(--primary);">Combo 🌿🔥</span>
+            <div class="product-img-wrapper">
+              <img src="assets/img/components.png" alt="Kit Refil Completo Hiper Mate">
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Kit Refil Completo (5 Sachês + 5 Aquecedores)</h3>
+              <div class="product-price">R$ 79,90 <span>/ kit</span></div>
+              <ul class="product-features">
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle-2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                  5 Sachês de Erva-Mate Premium Tradicional
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle-2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                  5 Cartuchos de aquecimento instantâneo
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle-2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                  Ideal para repor seus consumíveis de viagem
+                </li>
+              </ul>
+              <button class="btn btn-primary product-btn btn-add-to-cart" data-id="refil-completo" data-name="Kit Refil Completo (5x/5x)" data-price="79.90" data-img="assets/img/components.png" id="btn-comprar-refil-completo">Adicionar ao Carrinho</button>
             </div>
           </div>
         </div>
@@ -748,12 +895,134 @@
       </div>
     </section>
 
+    <!-- 👤 SEÇÃO 8: MINHA CONTA -->
+    <section class="page-section" id="minha-conta">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" id="auth-section-tag">Minha Conta</span>
+          <h2 class="section-title" id="auth-section-title">Acesse sua Área Exclusiva</h2>
+          <p class="section-desc" id="auth-section-desc">Gerencie seus dados e acompanhe o histórico dos seus chimarrões.</p>
+        </div>
+
+        <!-- Modo Deslogado: Formulários de Autenticação -->
+        <div class="auth-wrapper" id="auth-forms-container">
+          <div class="auth-card">
+            <div class="auth-tabs">
+              <button class="auth-tab active" id="auth-tab-login">Entrar</button>
+              <button class="auth-tab" id="auth-tab-register">Cadastrar</button>
+            </div>
+            
+            <!-- Formulário de Login -->
+            <form id="login-form" class="auth-form active">
+              <h3>Entrar na sua Conta</h3>
+              <p>Acesse seu histórico de pedidos e facilite suas compras.</p>
+              <div class="form-group">
+                <label for="login-email" class="form-label">E-mail *</label>
+                <input type="email" id="login-email" class="form-control" placeholder="exemplo@email.com" required>
+              </div>
+              <div class="form-group">
+                <label for="login-password" class="form-label">Senha *</label>
+                <input type="password" id="login-password" class="form-control" placeholder="Sua senha" required>
+              </div>
+              <button type="submit" class="btn btn-primary auth-submit-btn" id="btn-submit-login">Acessar Conta</button>
+            </form>
+
+            <!-- Formulário de Cadastro -->
+            <form id="register-form" class="auth-form">
+              <h3>Criar Nova Conta</h3>
+              <p>Cadastre-se para acompanhar seus pedidos e comprar mais rápido.</p>
+              <div class="form-group">
+                <label for="register-name" class="form-label">Nome Completo *</label>
+                <input type="text" id="register-name" class="form-control" placeholder="Seu nome" required>
+              </div>
+              <div class="form-group">
+                <label for="register-email" class="form-label">E-mail *</label>
+                <input type="email" id="register-email" class="form-control" placeholder="exemplo@email.com" required>
+              </div>
+              <div class="form-group">
+                <label for="register-password" class="form-label">Senha *</label>
+                <input type="password" id="register-password" class="form-control" placeholder="Mínimo 6 caracteres" minlength="6" required>
+              </div>
+              <div class="form-group">
+                <label for="register-phone" class="form-label">Telefone / WhatsApp *</label>
+                <input type="tel" id="register-phone" class="form-control" placeholder="(51) 99999-9999" required>
+              </div>
+              <div class="form-row" style="display: flex; gap: 15px;">
+                <div class="form-group col-cep" style="flex: 1;">
+                  <label for="register-cep" class="form-label">CEP *</label>
+                  <input type="text" id="register-cep" class="form-control" placeholder="90000-000" required>
+                </div>
+                <div class="form-group col-address" style="flex: 2;">
+                  <label for="register-address" class="form-label">Endereço Completo *</label>
+                  <input type="text" id="register-address" class="form-control" placeholder="Rua, Número, Bairro, Cidade/UF" required>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary auth-submit-btn" id="btn-submit-register">Criar Conta</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Modo Logado: Painel do Usuário -->
+        <div class="profile-container" id="profile-panel-container" style="display: none;">
+          <div class="profile-layout">
+            <!-- Coluna da Esquerda: Dados do Usuário -->
+            <div class="profile-sidebar">
+              <div class="profile-user-card">
+                <div class="profile-avatar">🧉</div>
+                <h3 id="profile-display-name">Nome do Usuário</h3>
+                <p id="profile-display-email">usuario@email.com</p>
+                <button class="logout-btn" id="btn-logout">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-log-out"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" x2="9" y1="12" y2="12"/></svg>
+                  Sair da Conta
+                </button>
+              </div>
+
+              <div class="profile-details-card">
+                <h4>Meus Dados de Entrega</h4>
+                <form id="profile-edit-form">
+                  <div class="form-group">
+                    <label for="edit-phone" class="form-label">WhatsApp</label>
+                    <input type="tel" id="edit-phone" class="form-control" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="edit-cep" class="form-label">CEP</label>
+                    <input type="text" id="edit-cep" class="form-control" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="edit-address" class="form-label">Endereço de Entrega</label>
+                    <input type="text" id="edit-address" class="form-control" required>
+                  </div>
+                  <button type="submit" class="btn btn-secondary btn-save-profile" id="btn-save-profile">Salvar Alterações</button>
+                </form>
+              </div>
+            </div>
+
+            <!-- Coluna da Direita: Histórico de Pedidos -->
+            <div class="profile-main">
+              <div class="history-card">
+                <h3>Meu Histórico de Compras</h3>
+                <div class="orders-list" id="orders-list-container">
+                  <!-- Mensagem caso não tenha pedidos -->
+                  <div class="no-orders" id="no-orders-message">
+                    <p>Você ainda não realizou nenhuma compra.</p>
+                    <a href="#produtos" class="btn btn-primary spa-btn" id="btn-profile-shop">Ir para a Loja</a>
+                  </div>
+                  <!-- Lista de pedidos inserida via JS -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
   </main>
 
   <!-- ==========================================================================
        BOTAO FLUTUANTE DO WHATSAPP
        ========================================================================== -->
-  <a href="https://wa.me/5551987654321?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20o%20HIPER%20MATE." class="whatsapp-fixed-btn" target="_blank" rel="noopener noreferrer" aria-label="Fale conosco no WhatsApp" id="whatsapp-float-btn">
+  <a href="https://wa.me/5541999039473?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20o%20HIPER%20MATE." class="whatsapp-fixed-btn" target="_blank" rel="noopener noreferrer" aria-label="Fale conosco no WhatsApp" id="whatsapp-float-btn">
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-circle"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
   </a>
 
